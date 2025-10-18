@@ -14,6 +14,15 @@ body {
     min-height: 100vh;
 }
 
+/* Remove green scroll indicators on mobile */
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
 .container {
     max-width: 450px;
     margin: 0 auto;
