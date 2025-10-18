@@ -1,7 +1,7 @@
 {
-  "name": "守永博貴 - プロフィール",
-  "short_name": "守永博貴",
-  "description": "株式会社FC&M 代表取締役 守永博貴のプロフィールページ",
+  "name": "竹下圭一郎 - プロフィール",
+  "short_name": "竹下圭一郎",
+  "description": "国分リース株式会社/株式会社ナンニチ/ケルノ 代表取締役/常務取締役/代表 竹下圭一郎のプロフィールページ",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#000000",
@@ -9,61 +9,61 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "icon copy.jpeg",
+      "src": "7W2A7485 .jpg",
       "sizes": "72x72",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "icon copy.jpeg",
+      "src": "7W2A7485 .jpg",
       "sizes": "96x96",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "icon copy.jpeg",
+      "src": "7W2A7485 .jpg",
       "sizes": "128x128",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "icon copy.jpeg",
+      "src": "7W2A7485 .jpg",
       "sizes": "144x144",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "icon copy.jpeg",
+      "src": "7W2A7485 .jpg",
       "sizes": "152x152",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "icon copy.jpeg",
+      "src": "7W2A7485 .jpg",
       "sizes": "192x192",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "icon copy.jpeg",
+      "src": "7W2A7485 .jpg",
       "sizes": "384x384",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "icon copy.jpeg",
+      "src": "7W2A7485 .jpg",
       "sizes": "512x512",
       "type": "image/jpeg",
       "purpose": "any"
     },
     {
-      "src": "icon copy.jpeg",
+      "src": "7W2A7485 .jpg",
       "sizes": "192x192",
       "type": "image/jpeg",
       "purpose": "maskable"
     },
     {
-      "src": "icon copy.jpeg",
+      "src": "7W2A7485 .jpg",
       "sizes": "512x512",
       "type": "image/jpeg",
       "purpose": "maskable"
