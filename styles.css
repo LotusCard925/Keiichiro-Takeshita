@@ -23,6 +23,32 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+/* Remove any green status bar or browser chrome */
+html, body {
+    background-color: #000000 !important;
+    overflow-x: hidden;
+}
+
+/* Ensure full screen coverage */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #0d0d0d, #1a1a1a);
+    z-index: -1;
+}
+
+/* Hide any browser UI elements */
+body {
+    -webkit-appearance: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 .container {
     max-width: 450px;
     margin: 0 auto;
