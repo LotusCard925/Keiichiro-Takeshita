@@ -270,13 +270,9 @@ async function downloadContactFromModal() {
 VERSION:3.0
 FN:竹下圭一郎
 N:竹下;圭一郎;;;
-ORG:国分リース株式会社/株式会社ナンニチ/ケルノ
-TITLE:代表取締役/常務取締役/代表
 EMAIL:kln.keybo@gmail.com
 TEL:09044887452
 URL:https://keiichiro-takeshita-5olw.vercel.app/
-URL:https://www.instagram.com/nannichi.kirishima/
-URL:https://www.nannichi.com/nannichi/
 NOTE:建設機械レンタル・販売事業・サッカーチーム運営・地域社会貢献活動`;
 
         // プロフィール画像がある場合のみ追加
