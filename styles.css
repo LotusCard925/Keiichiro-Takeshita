@@ -517,6 +517,10 @@ body {
     background: #FFD700;
 }
 
+.social-icon.line {
+    background: #00C300;
+}
+
 /* レスポンシブデザイン */
 
 /* スマートフォン (320px - 480px) */

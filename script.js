@@ -121,13 +121,13 @@ function initSocialLinks() {
 function showContactInfo() {
     const contactInfo = `
 連絡先情報:
-📧 Email: morinaga@fcandm926.com
-📱 Phone: 090-5292-6482
-📷 Instagram: @fcandm.morinaga
-📘 Facebook: 守永博貴
+📧 Email: kln.keybo@gmail.com
+📱 Phone: 090-4488-7452
+📷 Instagram: @nannichi.kirishima
+🌐 Website: 株式会社ナンニチ
     `.trim();
     
-    createCustomModal('守永博貴 - 連絡先情報', contactInfo);
+    createCustomModal('竹下圭一郎 - 連絡先情報', contactInfo);
 }
 
 // カスタムモーダル作成
@@ -260,7 +260,7 @@ async function downloadContactFromModal() {
         // プロフィール画像をBase64で取得（エラーが発生しても続行）
         let profileImageBase64 = '';
         try {
-            profileImageBase64 = await getImageAsBase64('icon copy.jpeg');
+            profileImageBase64 = await getImageAsBase64('7W2A7485 .jpg');
         } catch (error) {
             console.log('画像取得エラー（続行）:', error);
         }
@@ -268,14 +268,14 @@ async function downloadContactFromModal() {
         // vCardを作成
         let vCardData = `BEGIN:VCARD
 VERSION:3.0
-FN:守永博貴
-ORG:株式会社FC&M
-TITLE:代表取締役
-EMAIL:morinaga@fcandm926.com
-TEL:09052926482
-URL:https://www.instagram.com/fcandm.morinaga
-URL:https://www.facebook.com/profile.php?id=100014048287809
-NOTE:財務コンサルタント・トリプルインカムメソッド開発者`;
+FN:竹下圭一郎
+ORG:国分リース株式会社/株式会社ナンニチ/ケルノ
+TITLE:代表取締役/常務取締役/代表
+EMAIL:kln.keybo@gmail.com
+TEL:09044887452
+URL:https://www.instagram.com/nannichi.kirishima/
+URL:https://www.nannichi.com/nannichi/
+NOTE:建設機械レンタル・販売事業・サッカーチーム運営・地域社会貢献活動`;
 
         // プロフィール画像がある場合のみ追加
         if (profileImageBase64 && profileImageBase64.length > 0) {
@@ -292,7 +292,7 @@ END:VCARD`;
         
         const link = document.createElement('a');
         link.href = url;
-        link.download = 'Morinaga_Hiroki.vcf'; // 英語ファイル名で問題回避
+        link.download = 'Takeshita_Keiichiro.vcf'; // 竹下圭一郎のファイル名
         link.style.display = 'none';
         document.body.appendChild(link);
         link.click();
@@ -305,13 +305,6 @@ END:VCARD`;
     } catch (error) {
         console.error('連絡先保存エラー:', error);
         alert('連絡先の保存中にエラーが発生しました。再度お試しください。');
-    }
-    
-    // モーダルを閉じる
-    const saveModal = document.getElementById('save-options-modal');
-    if (saveModal) {
-        saveModal.style.display = 'none';
-        document.body.style.overflow = '';
     }
 }
 
@@ -1048,56 +1041,7 @@ function initPinchZoom(container) {
 }
 
 // 情報保存モーダルの機能
-document.addEventListener('DOMContentLoaded', function() {
-    const saveModal = document.getElementById('save-options-modal');
-    const openBtn = document.getElementById('open-save-modal-button');
-    const closeBtn = document.getElementById('close-modal-button');
-    const addToHomeBtn = document.getElementById('add-to-home-screen-button');
-
-    if (openBtn) openBtn.addEventListener('click', () => {
-        if (saveModal) { 
-            saveModal.style.display = 'flex'; 
-            document.body.style.overflow = 'hidden'; 
-        }
-    });
-    
-    if (closeBtn) closeBtn.addEventListener('click', () => {
-        if (saveModal) { 
-            saveModal.style.display = 'none'; 
-            document.body.style.overflow = ''; 
-        }
-    });
-    
-    if (saveModal) saveModal.addEventListener('click', (e) => {
-        if (e.target === saveModal) { 
-            saveModal.style.display = 'none'; 
-            document.body.style.overflow = ''; 
-        }
-    });
-
-    if (addToHomeBtn) addToHomeBtn.addEventListener('click', () => {
-        const instructions = `ホーム画面に追加する手順
-
-【iPhone/iPadの場合】
-1. Safariでサイトを開く
-2. 共有アイコン（□↑）をタップ
-3. 「ホーム画面に追加」をタップ
-4. 「追加」をタップ
-
-【Android(Chrome)の場合】
-1. Chromeでサイトを開く
-2. 右上の「⋮」メニューをタップ
-3. 「ホーム画面に追加」をタップ
-4. 案内に従って追加
-
-追加後は守永博貴さんのプロフィール画像がアイコンとして表示され、「守永博貴」という名前でホーム画面に追加されます。`;
-        alert(instructions);
-        if (saveModal) { 
-            saveModal.style.display = 'none'; 
-            document.body.style.overflow = ''; 
-        }
-    });
-});
+// モーダル関連のコードは削除（直接保存に変更したため）
 
 // ページ読み込み時に編集ボタンを表示するかチェック
 document.addEventListener('DOMContentLoaded', function() {

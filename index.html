@@ -77,7 +77,7 @@
 
         <!-- アクションボタン -->
         <div class="action-buttons">
-            <button class="btn-secondary" id="open-save-modal-button">
+            <button class="btn-secondary" onclick="downloadContactFromModal()">
                 <i class="fas fa-save"></i>
                 情報の保存
             </button>
@@ -265,6 +265,19 @@
                     </div>
                 </a>
 
+                <a href="#" class="social-link" onclick="alert('LINE IDは後日お知らせします'); return false;">
+                    <div class="social-icon line">
+                        <i class="fab fa-line"></i>
+                    </div>
+                    <div class="social-info">
+                        <div class="social-name">LINE</div>
+                        <div class="social-handle">ID: 準備中</div>
+                    </div>
+                    <div class="social-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+
             </div>
         </div>
         
@@ -274,32 +287,6 @@
         </div>
     </div>
 
-    <!-- 情報保存モーダル -->
-    <div id="save-options-modal" class="modal-overlay" style="display:none;">
-        <div class="modal-content">
-            <p class="modal-title">保存方法を選択</p>
-            <div class="modal-actions">
-                <button id="add-to-home-screen-button" class="modal-button">
-                    <i class="fas fa-home"></i>
-                    ホーム画面に追加
-                </button>
-                
-                <button onclick="downloadContactFromModal()" class="modal-button">
-                    <i class="fas fa-address-book"></i>
-                    連絡先に保存
-                </button>
-
-                <a
-                    href="mailto:?subject=【竹下圭一郎様】連絡先&body=竹下圭一郎様の連絡先です。%0A%0A---%0A会社名: 国分リース株式会社/株式会社ナンニチ/ケルノ%0A役職: 代表取締役/常務取締役/代表%0Aメール: kln.keybo@gmail.com%0A電話: 090-4488-7452%0AInstagram: https://www.instagram.com/nannichi.kirishima/%0AWebsite: https://www.nannichi.com/nannichi/%0A---%0A建設機械事業・サッカーチーム運営・地域社会貢献活動"
-                    class="modal-button"
-                >
-                    <i class="fas fa-envelope"></i>
-                    自分にメールを送る
-                </a>
-            </div>
-            <button id="close-modal-button" class="modal-close-button">戻る</button>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
