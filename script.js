@@ -242,7 +242,7 @@ FN:竹下圭一郎
 N:竹下;圭一郎;;;
 EMAIL:kln.keybo@gmail.com
 TEL:09044887452
-URL:https://keiichiro-takeshita.vercel.app/
+URL:https://keiichiro-takeshita-pi.vercel.app/
 NOTE:建設機械レンタル・販売事業・サッカーチーム運営・地域社会貢献活動`;
 
         // プロフィール画像がある場合のみ追加
