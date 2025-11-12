@@ -60,37 +60,7 @@ function initButtonEvents() {
     const exchangeButton = document.querySelector('.btn-primary');
     const downloadButton = document.querySelector('.btn-secondary');
 
-    // Exchange Contact ボタンのクリックイベント
-    if (exchangeButton) {
-        exchangeButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // ボタンのアニメーション効果
-            this.style.transform = 'scale(0.95)';
-            setTimeout(() => {
-                this.style.transform = 'scale(1)';
-            }, 150);
-
-            // 連絡先交換のモーダルまたはアクション
-            showContactModal();
-        });
-    }
-
-    // Download ボタンのクリックイベント
-    if (downloadButton) {
-        downloadButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // ボタンのアニメーション効果
-            this.style.transform = 'scale(0.95)';
-            setTimeout(() => {
-                this.style.transform = 'scale(1)';
-            }, 150);
-
-            // ダウンロード機能（vCard形式など）
-            downloadContact();
-        });
-    }
+    // ボタンのイベントリスナーはHTMLのonclick属性で処理
 }
 
 // ソーシャルリンクのイベントリスナー設定
@@ -272,7 +242,7 @@ FN:竹下圭一郎
 N:竹下;圭一郎;;;
 EMAIL:kln.keybo@gmail.com
 TEL:09044887452
-URL:https://keiichiro-takeshita-5olw.vercel.app/
+URL:https://keiichiro-takeshita.vercel.app/
 NOTE:建設機械レンタル・販売事業・サッカーチーム運営・地域社会貢献活動`;
 
         // プロフィール画像がある場合のみ追加
